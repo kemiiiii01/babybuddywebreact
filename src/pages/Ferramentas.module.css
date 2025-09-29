@@ -1,0 +1,29 @@
+.ferramentas {
+  padding: 2rem;
+  text-align: center;
+}
+
+.artigos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.artigo {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.artigo img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.artigo p {
+  font-weight: bold;
+  color: #333;
+}

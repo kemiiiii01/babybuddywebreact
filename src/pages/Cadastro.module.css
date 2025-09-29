@@ -1,0 +1,39 @@
+.cadastro {
+  padding: 2rem;
+  text-align: center;
+}
+
+.formCadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.formCadastro input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.formCadastro button {
+  padding: 0.5rem;
+  background-color: #ff99aa;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.formCadastro button:hover {
+  background-color: #ff7788;
+}
+
+.apps img {
+  width: 100px;
+  margin: 1rem 0.5rem;
+}
+
+.qrcode {
+  width: 120px;
+  margin-top: 1rem;
+}

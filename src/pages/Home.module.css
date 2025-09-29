@@ -1,0 +1,35 @@
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.homeImage {
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff0f5;
+}
+
+.card h3 {
+  color: #ff6688;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #444;
+  font-size: 0.9rem;
+}
