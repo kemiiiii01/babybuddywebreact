@@ -14,7 +14,7 @@ import TermosDeUso from './pages/TermosDeUso.jsx'
 
 const App = () => (
   <Router>
-    <Header />
+   <Header />
     <main style={{ minHeight: '80vh' }}>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -29,7 +29,7 @@ const App = () => (
       </Routes>
     </main>
     <Footer />
-  </Router>
+  </Router> 
 )
 
 export default App
