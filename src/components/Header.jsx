@@ -7,19 +7,19 @@ const Header = () => {
       <div className={styles.headerContent}>
        
         <div className={styles.logo}>
-          <img src="logo-babybuddy3.png" alt="Logo" />
+          
         </div>
 
        
         <nav className={styles.navLinks}>
           <a href="#">Artigos</a>
-          <a href="sobre.html">Sobre Nós</a>
+          <a href="#">Sobre Nós</a>
           <a href="#">Contato</a>
         </nav>
 
        
         <div className={styles.navAction}>
-          <a href="cadastro.html" className={styles.btnCadastro}>Cadastre-se</a>
+          <a href="Cadastro.jsx" className={styles.btnCadastro}>Cadastre-se</a>
         </div>
       </div>
     </header>
