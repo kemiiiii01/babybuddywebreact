@@ -15,18 +15,24 @@
   z-index: 1000;
 }
 
-.navbarContent {
+.navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navLinks {
+.logo img {
+  height: 20px;
+  width: auto;
+  max-width: max-content;
+}
+
+.nav-links {
   display: flex;
   gap: 40px;
 }
 
-.navLinks a {
+.nav-links a {
   color: #ec407a;
   text-decoration: none;
   font-weight: bold;
@@ -34,12 +40,11 @@
   transition: color 0.3s;
 }
 
-.navLinks a:hover {
+.nav-links a:hover {
   color: #f06292;
 }
 
-.navAction {
-    .btnCadastro {
+.btn-cadastro {
   background: linear-gradient(to right, #f06292, #ec407a);
   color: white;
   padding: 12px 24px;
@@ -49,7 +54,6 @@
   transition: background 0.3s;
 }
 
-}
-.btnCadastro:hover {
+.btn-cadastro:hover {
   background: linear-gradient(to right, #ec407a, #f06292);
 }
