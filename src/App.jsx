@@ -17,7 +17,6 @@ import TermosDeUso from './pages/TermosDeUso.jsx'
 const App = () => (
   <Router>
    <Header />
-    <main style={{ minHeight: '80vh' }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cadastro" element={<Cadastro />} />
@@ -29,8 +28,6 @@ const App = () => (
         <Route path="/tentandoengravidar" element={<TentandoEngravidar />} />
         <Route path="/termosdeuso" element={<TermosDeUso />} />
       </Routes>
-    </main>
-    <Footer />
   </Router> 
 )
 

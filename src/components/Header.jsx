@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css'; 
 
 const Header = () => {
@@ -19,7 +20,9 @@ const Header = () => {
 
        
         <div className={styles.navAction}>
-          <a href="Cadastro.jsx" className={styles.btnCadastro}>Cadastre-se</a>
+         <Link to="/cadastro">Ir para Cadastro</Link>
+
+
         </div>
       </div>
     </header>
