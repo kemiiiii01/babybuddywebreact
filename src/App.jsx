@@ -11,6 +11,7 @@ import Seguranca from './pages/Seguranca.jsx'
 import Sobre from './pages/Sobre.jsx'
 import TentandoEngravidar from './pages/TentandoEngravidar.jsx'
 import TermosDeUso from './pages/TermosDeUso.jsx'
+import BabyBuddyHome from './pages/BabyBuddyHome.jsx'
 
 
 
@@ -27,6 +28,7 @@ const App = () => (
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/tentandoengravidar" element={<TentandoEngravidar />} />
         <Route path="/termosdeuso" element={<TermosDeUso />} />
+        <Route path='/babybuddyhome' element={<BabyBuddyHome/>}/>
       </Routes>
   </Router> 
 )

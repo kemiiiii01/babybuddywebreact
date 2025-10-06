@@ -22,51 +22,7 @@ const Home = () => {
     </section>
   );
 };
-
-const BabyBuddySection = () => {
-  return (
-<section className="babybuddy-section">
-<div className="container">
-<div className="image-side">
-<img src="capahome.png" alt="Imagem do app BabyBuddy" />
-</div>
-<div className="content-side">
-<h2>
-            O que posso fazer com o aplicativo <span>BabyBuddy</span>?
-</h2>
- 
-          <div className="card-babybuddy">
-<h3>Acompanhe sua gravidez</h3>
-<p>
-              O BabyBuddy facilita o acompanhamento da sua gestação, oferecendo
-              informações personalizadas e suporte diário para uma jornada mais
-              tranquila e informada.
-</p>
-</div>
- 
-          <div className="card-babybuddy">
-<h3>Cuide de você</h3>
-<p>
-              Cuidar de si mesma durante a gravidez é essencial para garantir
-              saúde e bem-estar para você e seu bebê.
-</p>
-</div>
- 
-          <div className="card-babybuddy">
-<h3>Acompanhe sua gravidez</h3>
-<p>
-              O BabyBuddy facilita o acompanhamento da sua gestação, oferecendo
-              informações personalizadas e suporte diário para uma jornada mais
-              tranquila e informada.
-</p>
-</div>
-</div>
-</div>
-</section>
-  );
-};
     
-
 
 
 export default Home;

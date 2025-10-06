@@ -44,7 +44,13 @@
   color: #f06292;
 }
 
-.btnCadastro {
+.cadastro-link {
+  color: white; 
+  font-weight: bold; 
+  font-size: 18px; 
+}
+
+.navAction {
   background: linear-gradient(to right, #f06292, #ec407a);
   color: #f06292;
   padding: 12px 24px;
@@ -54,6 +60,7 @@
   transition: background 0.3s;
 }
 
-.btnCadastro:hover {
+.navAction:hover {
   background: linear-gradient(to right, #ec407a, #f06292);
 }
+  

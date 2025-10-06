@@ -20,7 +20,7 @@ const Header = () => {
 
        
         <div className={styles.navAction}>
-         <Link to="/cadastro">Cadastro</Link>
+         <Link to="/cadastro" className='cadastro-link'>Cadastrar-se</Link>
 
 
         </div>
@@ -30,3 +30,4 @@ const Header = () => {
 };
 
 export default Header;
+  
