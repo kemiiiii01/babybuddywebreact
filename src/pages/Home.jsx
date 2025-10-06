@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import gravidaImg from '../assets/gravida.png'; 
-import BabyBuddyHome from './BabyBuddyHome.jsx'; // Importa o componente BabyBuddyHome
+import BabyBuddyHome from './BabyBuddyHome.jsx'; 
 
 const Home = () => {
   return (

@@ -12,6 +12,8 @@ import Seguranca from './pages/Seguranca.jsx'
 import Sobre from './pages/Sobre.jsx'
 import TentandoEngravidar from './pages/TentandoEngravidar.jsx'
 import TermosDeUso from './pages/TermosDeUso.jsx'
+import Features from './pages/features.jsx'
+import Artigos from './pages/artigos.jsx'
 
 
 

@@ -1,18 +1,14 @@
 .babybuddy-section {
-  background-color: white;
+  background-color: transparent;  /* deixa o fundo igual ao da página */
   padding: 10px 30px;
-  border-radius: 50px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0;               /* remove bordas arredondadas */
+  box-shadow: none;               /* remove sombra */
   max-width: 1400px;
-  margin: 20px auto;
+  margin: 0 auto;                 /* centraliza sem espaçamento extra */
   font-family: 'League Spartan', sans-serif;
-  /* Se quiser a seção fixa, mantenha position fixed, mas geralmente seção não é fixa */
-  /* position: fixed; */
-  /* top: 20px; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-  /* z-index: 1000; */
+  padding-top: 160px;
 }
+
 
 .header {
   background-color: white;

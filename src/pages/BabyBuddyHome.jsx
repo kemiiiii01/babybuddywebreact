@@ -47,5 +47,5 @@ const BabyBuddyHome = () => {
     </section>
   );
 };
-
+ 
 export default BabyBuddyHome;
