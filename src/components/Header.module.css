@@ -46,7 +46,7 @@
 
 .btnCadastro {
   background: linear-gradient(to right, #f06292, #ec407a);
-  color: white;
+  color: #f06292;
   padding: 12px 24px;
   border-radius: 30px;
   font-weight: bold;

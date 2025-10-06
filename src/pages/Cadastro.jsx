@@ -23,7 +23,7 @@ export default function Cadastro() {
   email: data.email,
   senha: data.password,
   nivel_acesso: 'CLIENTE',
-  data_cadastro: new Date().toISOString(), // nome correto e valor atual
+  data_cadastro: new Date().toISOString(), 
   statusUsuario: true,
 });
 

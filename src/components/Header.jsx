@@ -20,7 +20,7 @@ const Header = () => {
 
        
         <div className={styles.navAction}>
-         <Link to="/cadastro">Ir para Cadastro</Link>
+         <Link to="/cadastro">Cadastro</Link>
 
 
         </div>

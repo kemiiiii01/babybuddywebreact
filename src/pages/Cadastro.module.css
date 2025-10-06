@@ -59,7 +59,7 @@ h2 {
   transform: translateY(-50%);
   color: #fdd7e4; 
   font-size: 18px;
-  pointer-events: none;
+  pointer-events: none; 
 }
 
 .togglePassword {
