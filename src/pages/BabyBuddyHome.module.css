@@ -1,6 +1,34 @@
 .babybuddy-section {
-  padding: 140px 20px;
-  background-color: #fff;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1400px;
+  margin: 20px auto;
+  font-family: 'League Spartan', sans-serif;
+  /* Se quiser a seção fixa, mantenha position fixed, mas geralmente seção não é fixa */
+  /* position: fixed; */
+  /* top: 20px; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* z-index: 1000; */
+}
+
+.header {
+  background-color: white;
+  padding: 10px 30px;           /* menos altura */
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1400px;            /* largura maior */
+  margin: 20px auto;
+  font-family: 'League Spartan', sans-serif;
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  z-index: 1000;
 }
 
 .container {
@@ -14,6 +42,7 @@
 }
 
 .image-side {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +69,7 @@
   color: #ec407a;
   margin-bottom: 30px;
   font-weight: bold;
-  font-family: "League Spartan";
+  font-family: "League Spartan", sans-serif;
 }
 
 .content-side h2 span {
@@ -54,7 +83,7 @@
   margin-bottom: 20px;
   box-shadow: 4px 4px 8px rgba(247, 108, 108, 0.2);
   transition: transform 0.2s ease;
-  font-family: 'League Spartan' sans-serif;
+  font-family: 'League Spartan', sans-serif;
   max-height: 450px;
 }
 
@@ -67,12 +96,13 @@
   color: #ec407a;
   font-size: 18px;
   font-weight: bold;
-  font-family: "League Spartan";
+  font-family: "League Spartan", sans-serif;
 }
 
 .card-babybuddy p {
   color: #333;
   margin: 10px 0 0;
   font-size: 14px;
-  font-family: "League Spartan";
+  line-height: 1.6;
+  font-family: "League Spartan", sans-serif;
 }

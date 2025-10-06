@@ -17,7 +17,7 @@
 }
 
 .cadastroContainer {
-  background: rgba(255, 255, 255, 0.219);
+  background: rgba(255, 255, 255, 0.22);
   padding: 40px;
   border-radius: 15px;
   text-align: center;
@@ -30,6 +30,7 @@ h2 {
   color: #ec407a;
   margin-bottom: 25px;
   font-size: 30px;
+  font-weight: 600;
 }
 
 .inputGroup {
@@ -39,13 +40,14 @@ h2 {
 
 .inputGroup input {
   width: 100%;
-  padding: 16px 45px 16px 16px; 
+  padding: 16px 45px 16px 16px;
   border-radius: 10px;
   border: none;
   outline: none;
   font-size: 16px;
   background: rgba(255, 255, 255, 0.288);
   color: #ff9dbd;
+  transition: background-color 0.3s ease;
 }
 
 .inputGroup input::placeholder {
@@ -57,9 +59,9 @@ h2 {
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
-  color: #fdd7e4; 
+  color: #fdd7e4;
   font-size: 18px;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .togglePassword {
@@ -82,7 +84,7 @@ button {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {

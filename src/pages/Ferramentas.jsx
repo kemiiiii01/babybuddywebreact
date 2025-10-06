@@ -1,27 +1,27 @@
-import React from 'react'
-import './Ferramentas.module.css'
-import img1 from '../assets/imgartigo1.png'
-import img2 from '../assets/imgartigo2.png'
-import img3 from '../assets/imgartigo3.png'
+import React from 'react';
+import styles from './CuidadosBebe.module.css'; // Importa CSS Modules
+import gravida from '../assets/gravida.png';
+import facilidades from '../assets/facilidade.png';
+import compartilhamento from '../assets/compartilhamento.png';
 
-const Ferramentas = () => (
-  <div className="ferramentas">
-    <h2>Ferramentas</h2>
-    <div className="artigos">
-      <div className="artigo">
-        <img src={img1} alt="Artigo 1"/>
-        <p>Artigo 1</p>
+const CuidadosBebe = () => (
+  <div className={styles.cuidados}>
+    <h2>Cuidados com o Bebê</h2>
+    <div className={styles.cards}>
+      <div className={styles.card}>
+        <img src={gravida} alt="Gestante" />
+        <p>Dicas para gestantes</p>
       </div>
-      <div className="artigo">
-        <img src={img2} alt="Artigo 2"/>
-        <p>Artigo 2</p>
+      <div className={styles.card}>
+        <img src={facilidades} alt="Facilidades" />
+        <p>Facilidades para o dia a dia</p>
       </div>
-      <div className="artigo">
-        <img src={img3} alt="Artigo 3"/>
-        <p>Artigo 3</p>
+      <div className={styles.card}>
+        <img src={compartilhamento} alt="Compartilhamento" />
+        <p>Compartilhe informações importantes</p>
       </div>
     </div>
   </div>
-)
+);
 
-export default Ferramentas
+export default CuidadosBebe;

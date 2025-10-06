@@ -8,21 +8,17 @@ const Header = () => {
       <div className={styles.headerContent}>
        
         <div className={styles.logo}>
-          
+          {/* Coloque sua logo aqui, se quiser */}
         </div>
 
-       
         <nav className={styles.navLinks}>
           <a href="#">Artigos</a>
           <a href="#">Sobre Nós</a>
           <a href="#">Contato</a>
         </nav>
 
-       
-        <div className={styles.navAction}>
-         <Link to="/cadastro" className='cadastro-link'>Cadastrar-se</Link>
-
-
+        <div>
+         <Link to="/cadastro" className={styles.cadastroLink}>Cadastrar-se</Link>
         </div>
       </div>
     </header>
@@ -30,4 +26,3 @@ const Header = () => {
 };
 
 export default Header;
-  

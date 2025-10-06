@@ -44,23 +44,18 @@
   color: #f06292;
 }
 
-.cadastro-link {
-  color: white; 
-  font-weight: bold; 
-  font-size: 18px; 
-}
-
-.navAction {
+/* Botão Cadastrar-se estilizado */
+.cadastroLink {
   background: linear-gradient(to right, #f06292, #ec407a);
-  color: #f06292;
+  color: #ffffff;
   padding: 12px 24px;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s;
+  display: inline-block; /* importante para padding funcionar */
 }
 
-.navAction:hover {
+.cadastroLink:hover {
   background: linear-gradient(to right, #ec407a, #f06292);
 }
-  

@@ -19,15 +19,19 @@ export default function Cadastro() {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post('http://localhost:8080/api/v1/Usuario', {
-  nome: data.name,
-  email: data.email,
-  senha: data.password,
-  nivel_acesso: 'CLIENTE',
-  data_cadastro: new Date().toISOString(), 
-  statusUsuario: true,
-});
+        nome: data.name,
+        email: data.email,
+        senha: data.password,
+        nivel_acesso: 'CLIENTE',
+        data_cadastro: new Date().toISOString(),
+        statusUsuario: true,
+      });
 
       console.log('Resposta da API:', response.data);
+
+      // Recarrega a página após cadastro com sucesso
+      window.location.reload();
+
     } catch (error) {
       console.error('Erro ao cadastrar:', error.response?.data || error.message);
       alert('Erro ao cadastrar usuário. Verifique os dados.');
@@ -45,55 +49,52 @@ export default function Cadastro() {
   };
 
   return (
-
-    
     <div className={styles.appWrapper}>
       <div className={styles.cadastroContainer}>
         <h2>BabyBuddy</h2>
         <form id="formCadastro" onSubmit={handleSubmit}>
-  <div className={styles.inputGroup}>
-    <input type="text" id="nome" placeholder="Nome completo" required />
-    <i className="fa fa-user"></i>
-  </div>
+          <div className={styles.inputGroup}>
+            <input type="text" id="nome" placeholder="Nome completo" required />
+            <i className="fa fa-user"></i>
+          </div>
 
-  <div className={styles.inputGroup}>
-    <input type="tel" id="telefone" placeholder="Telefone" required />
-    <i className="fa fa-phone"></i>
-  </div>
+          <div className={styles.inputGroup}>
+            <input type="tel" id="telefone" placeholder="Telefone" required />
+            <i className="fa fa-phone"></i>
+          </div>
 
-  <div className={styles.inputGroup}>
-    <input type="email" id="email" placeholder="Email" required />
-    <i className="fa fa-envelope"></i>
-  </div>
+          <div className={styles.inputGroup}>
+            <input type="email" id="email" placeholder="Email" required />
+            <i className="fa fa-envelope"></i>
+          </div>
 
-  <div className={styles.inputGroup}>
-    <input type="password" id="senha" placeholder="Senha" required />
-    <span
-      className={styles.togglePassword}
-      onClick={(e) => togglePassword("senha", e.currentTarget)}
-    >
-      <i className="fa fa-eye"></i>
-    </span>
-  </div>
+          <div className={styles.inputGroup}>
+            <input type="password" id="senha" placeholder="Senha" required />
+            <span
+              className={styles.togglePassword}
+              onClick={(e) => togglePassword('senha', e.currentTarget)}
+            >
+              <i className="fa fa-eye"></i>
+            </span>
+          </div>
 
-  <div className={styles.inputGroup}>
-    <input
-      type="password"
-      id="confirmaSenha"
-      placeholder="Confirmar Senha"
-      required
-    />
-    <span
-      className={styles.togglePassword}
-      onClick={(e) => togglePassword("confirmaSenha", e.currentTarget)}
-    >
-      <i className="fa fa-eye"></i>
-    </span>
-  </div>
+          <div className={styles.inputGroup}>
+            <input
+              type="password"
+              id="confirmaSenha"
+              placeholder="Confirmar Senha"
+              required
+            />
+            <span
+              className={styles.togglePassword}
+              onClick={(e) => togglePassword('confirmaSenha', e.currentTarget)}
+            >
+              <i className="fa fa-eye"></i>
+            </span>
+          </div>
 
-  <button type="submit">Cadastrar</button>
-</form>
-
+          <button type="submit">Cadastrar</button>
+        </form>
       </div>
     </div>
   );
