@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css'; 
 
-const Header = () => {
+const Header = ({onScrollTo}) => {
   return (
     <header className={styles.header}> 
       <div className={styles.headerContent}>
@@ -12,7 +12,7 @@ const Header = () => {
         </div>
 
         <nav className={styles.navLinks}>
-          <a href="#">Artigos</a>
+          <button onClick={() => onScrollTo("features")}>Features</button>
           <a href="#">Sobre Nós</a>
           <a href="#">Contato</a>
         </nav>
