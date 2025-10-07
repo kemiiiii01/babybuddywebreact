@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './Home.module.css';
 import gravidaImg from '../assets/gravida.png'; 
 import BabyBuddyHome from './BabyBuddyHome.jsx'; 
+import features from './Features.jsx';
+import Footer from '../components/Footer.jsx';
+import Features from './Features.jsx';
+import Artigos from './Artigos.jsx';
 
 const Home = () => {
   return (
@@ -27,6 +31,9 @@ const Home = () => {
 
       {/* BabyBuddyHome renderizado logo abaixo da seção acima */}
       <BabyBuddyHome />
+      <Features />
+      <Artigos/>
+
     </>
   );
 };
