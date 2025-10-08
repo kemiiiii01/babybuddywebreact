@@ -1,14 +1,11 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import styles from './Home.module.css';
 import gravidaImg from '../assets/gravida.png'; 
 import BabyBuddyHome from './BabyBuddyHome.jsx'; 
-import features from './Features.jsx';
+import Features from './Features.jsx'; // Mantido apenas uma importação
 import Footer from '../components/Footer.jsx';
-import Features from './Features.jsx';
 import Artigos from './Artigos.jsx';
 
-
-function Rolagem() {const}
 const Home = () => {
   return (
     <>
@@ -27,16 +24,15 @@ const Home = () => {
               primeira viagem, a acompanharem o desenvolvimento de seus bebês e
               gerenciarem a maternidade de forma eficiente.
             </p>
-          <a href="ok">Sobre Nós</a>
+            <a href="#sobre">Sobre Nós</a>
           </div>
         </div>
       </section>
 
       {/* BabyBuddyHome renderizado logo abaixo da seção acima */}
-      <BabyBuddyHome className="ok"/>
+      <BabyBuddyHome className="ok" />
       <Features />
-      <Artigos/>
-
+      <Artigos />
     </>
   );
 };
