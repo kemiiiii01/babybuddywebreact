@@ -2,15 +2,15 @@ import React, { useRef } from 'react';
 import styles from './Home.module.css';
 import gravidaImg from '../assets/gravida.png'; 
 import BabyBuddyHome from './BabyBuddyHome.jsx'; 
-import Features from './Features.jsx'; // Mantido apenas uma importação
+import Features from './features.jsx'; 
 import Footer from '../components/Footer.jsx';
-import Artigos from './Artigos.jsx';
+import Artigos from './artigos.jsx';
 
 const Home = () => {
   return (
     <>
       <section 
-      id="home" // Esse é o ID para a rolagem suave
+      id="home" 
         className={styles.introSection}>
         <div className={styles.introContainer}>
           <div className={styles.introImage}>

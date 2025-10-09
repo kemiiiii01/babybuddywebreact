@@ -1,3 +1,4 @@
+
 .header {
   background-color: white;
   padding: 25px 30px;
@@ -21,40 +22,51 @@
   justify-content: space-between;
 }
 
-.logo img {
-  height: 20px;
-  width: auto;
-  max-width: max-content;
-}
 
 .navLinks {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  gap: 24px; /* espaçamento menor entre os links */
+  padding-left: 50px;
 }
 
-.navLinks a {
+.navLinks button {
+  background: transparent;
+  white-space: nowrap;
+  border: none;
   color: #ec407a;
-  text-decoration: none;
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer;
   transition: color 0.3s;
+  padding: 8px 16px;
+  border-radius: 30px;
 }
 
-.navLinks a:hover {
+.navLinks button:hover {
   color: #f06292;
 }
 
-/* Botão Cadastrar-se estilizado */
+.cadastroWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
 .cadastroLink {
   background: linear-gradient(to right, #f06292, #ec407a);
-  color: #ffffff;
+  color: white;
   padding: 12px 24px;
   border-radius: 30px;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
   transition: background 0.3s;
-  display: inline-block; /* importante para padding funcionar */
+  outline: none; 
 }
+
 
 .cadastroLink:hover {
   background: linear-gradient(to right, #ec407a, #f06292);
