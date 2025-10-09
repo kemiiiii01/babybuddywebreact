@@ -34,6 +34,7 @@ const Home = () => {
       <BabyBuddyHome className="ok" />
       <Features />
       <Artigos />
+      <Cadastro />
     </>
   );
 };
