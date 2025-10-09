@@ -9,7 +9,9 @@ import Artigos from './Artigos.jsx';
 const Home = () => {
   return (
     <>
-      <section className={styles.introSection}>
+      <section 
+      id="home" // Esse é o ID para a rolagem suave
+        className={styles.introSection}>
         <div className={styles.introContainer}>
           <div className={styles.introImage}>
             <img src={gravidaImg} alt="Gestante capa" />
@@ -24,7 +26,6 @@ const Home = () => {
               primeira viagem, a acompanharem o desenvolvimento de seus bebês e
               gerenciarem a maternidade de forma eficiente.
             </p>
-            <a href="#sobre">Sobre Nós</a>
           </div>
         </div>
       </section>

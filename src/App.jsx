@@ -15,30 +15,44 @@ import TermosDeUso from './pages/TermosDeUso.jsx';
 import Features from './pages/Features.jsx';
 import Artigos from './pages/Artigos.jsx';
 
-const App = () => (
-  <Router>
-    {/* Header será exibido em todas as páginas */}
-    <Header />
+const App = () => {
 
-    {/* Rotas para as páginas */}
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/babybuddyhome" element={<BabyBuddyHome />} />
-      <Route path="/cadastro" element={<Cadastro />} />
-      <Route path="/cuidadosbebe" element={<CuidadosBebe />} />
-      <Route path="/ferramentas" element={<Ferramentas />} />
-      <Route path="/periodogestacional" element={<PeriodoGestacional />} />
-      <Route path="/seguranca" element={<Seguranca />} />
-      <Route path="/sobre" element={<Sobre />} />
-      <Route path="/tentandoengravidar" element={<TentandoEngravidar />} />
-      <Route path="/termosdeuso" element={<TermosDeUso />} />
-      <Route path="/features" element={<Features />} />
-      <Route path="/artigos" element={<Artigos />} />
-    </Routes>
+  // Função para rolar suavemente para a seção
+  const onScrollTo = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
 
-    {/* Footer será exibido em todas as páginas */}
-    <Footer />
-  </Router>
-);
+  return (
+    <Router>
+      {/* Header será exibido em todas as páginas */}
+      <Header onScrollTo={onScrollTo} />
+
+      {/* Rotas para as páginas */}
+      <Routes>
+        <Route path="/" element={<Home onScrollTo={onScrollTo} />} />
+        <Route path="/babybuddyhome" element={<BabyBuddyHome />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/cuidadosbebe" element={<CuidadosBebe />} />
+        <Route path="/ferramentas" element={<Ferramentas />} />
+        <Route path="/periodogestacional" element={<PeriodoGestacional />} />
+        <Route path="/seguranca" element={<Seguranca />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/tentandoengravidar" element={<TentandoEngravidar />} />
+        <Route path="/termosdeuso" element={<TermosDeUso />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/artigos" element={<Artigos />} />
+      </Routes>
+
+      {/* Footer será exibido em todas as páginas */}
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;

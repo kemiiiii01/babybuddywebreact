@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Header.module.css'; 
+import styles from './Header.module.css';
 
 const Header = ({ onScrollTo }) => {
   return (
@@ -13,14 +13,9 @@ const Header = ({ onScrollTo }) => {
 
         {/* Barra de navegação (Navbar) */}
         <nav className={styles.navLinks}>
-          <button onClick={() => onScrollTo("home")}>Home</button>
-          <button onClick={() => onScrollTo("sobre")}>Sobre</button>
-          <button onClick={() => onScrollTo("contato")}>Contato</button>
-          
-          {/* Links de navegação */}
-          <button onClick={() => onScrollTo("features")}>Features</button>
-          <a href="#">Sobre Nós</a>
-          <a href="#">Contato</a>
+          <button onClick={() => onScrollTo("home")}>Inicio</button>
+          <button onClick={() => onScrollTo("babyBuddyHome")}>Sobre</button>
+          <button onClick={() => onScrollTo("artigos")}>Artigos</button>
         </nav>
 
         {/* Link para cadastro */}

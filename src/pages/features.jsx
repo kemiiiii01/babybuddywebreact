@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Features = () => {
   return (
-    <div>features</div>
-  )
-}
+    <section id="contato">
+      <div>Features</div>
+    </section>
+  );
+};
 
-export default Features
+export default Features;
