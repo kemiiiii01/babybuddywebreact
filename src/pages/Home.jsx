@@ -33,9 +33,7 @@ const Home = () => {
       {/* BabyBuddyHome renderizado logo abaixo da seção acima */}
       <BabyBuddyHome className="ok" />
       <Features />
-      <Artigos />
-      <Cadastro />
-    </>
+      <Artigos />    </>
   );
 };
 
