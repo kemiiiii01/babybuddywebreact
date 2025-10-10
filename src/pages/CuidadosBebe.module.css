@@ -1,30 +1,163 @@
+/* CuidadosBebe.module.css */
 .cuidados {
-  padding: 2rem;
-  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-text {
+  margin-bottom: 40px;
+}
+
+.breadcrumb {
+  color: #ec407a;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.meta-info {
+  font-size: 0.8rem;
+  background-color: #f1f5f5;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #333;
+}
+
+.reading-time {
+  color: #ec407a;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  border-radius: 20px;
+  border-top: 1px solid #eee;
+}
+
+.article-main {
+  flex: 3;
+}
+
+.medical-review {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.review-box {
+  background-color: #fff0f0;
+  border-left: 6px solid #ec407a;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.review-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ec407a;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.key-points {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.key-points li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.article-main h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.article-main p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.article-main ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .cards {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 .card {
-  width: 200px;
-  border: 1px solid #ddd;
+  background-color: #fff;
   border-radius: 8px;
-  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
+  max-width: 80%;
+  margin-bottom: 16px;
 }
 
 .card p {
-  font-weight: bold;
+  font-size: 1rem;
   color: #333;
+}
+
+@media (max-width: 1024px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .article-section {
+    padding: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
