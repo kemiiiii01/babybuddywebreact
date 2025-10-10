@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import styles from './Cadastro.module.css';
 
 export default function Cadastro() {
+  const [loading, setLoading] = useState(false); // Para mostrar um loader enquanto carrega
+  const [error, setError] = useState(""); // Para mostrar um erro se acontecer
+  const [success, setSuccess] = useState(""); // Para mostrar uma mensagem de sucesso
+
   const togglePassword = (id, element) => {
     const input = document.getElementById(id);
     if (input.type === 'password') {
@@ -17,6 +21,10 @@ export default function Cadastro() {
   };
 
   const onSubmit = async (data) => {
+    setLoading(true);
+    setError("");
+    setSuccess("");
+
     try {
       const response = await axios.post('http://localhost:8080/api/v1/Usuario', {
         nome: data.name,
@@ -29,12 +37,13 @@ export default function Cadastro() {
 
       console.log('Resposta da API:', response.data);
 
-      // Recarrega a página após cadastro com sucesso
-      window.location.reload();
-
+      // Mensagem de sucesso
+      setSuccess("Cadastro realizado com sucesso!");
     } catch (error) {
       console.error('Erro ao cadastrar:', error.response?.data || error.message);
-      alert('Erro ao cadastrar usuário. Verifique os dados.');
+      setError('Erro ao cadastrar usuário. Verifique os dados.');
+    } finally {
+      setLoading(false); // Parar o loader após a resposta da API
     }
   };
 
@@ -52,6 +61,11 @@ export default function Cadastro() {
     <div className={styles.appWrapper}>
       <div className={styles.cadastroContainer}>
         <h2>BabyBuddy</h2>
+        
+        {/* Exibe a mensagem de sucesso ou erro */}
+        {success && <div className={styles.successMessage}>{success}</div>}
+        {error && <div className={styles.errorMessage}>{error}</div>}
+
         <form id="formCadastro" onSubmit={handleSubmit}>
           <div className={styles.inputGroup}>
             <input type="text" id="nome" placeholder="Nome completo" required />
@@ -93,7 +107,9 @@ export default function Cadastro() {
             </span>
           </div>
 
-          <button type="submit">Cadastrar</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Cadastrando..." : "Cadastrar"}
+          </button>
         </form>
       </div>
     </div>

@@ -1,17 +1,16 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styles from './Home.module.css';
 import gravidaImg from '../assets/gravida.png'; 
 import BabyBuddyHome from './BabyBuddyHome.jsx'; 
 import Features from './features.jsx'; 
 import Footer from '../components/Footer.jsx';
 import Artigos from './artigos.jsx';
+import Cadastro from './Cadastro.jsx'; // Importar o componente Cadastro
 
 const Home = () => {
   return (
     <>
-      <section 
-      id="home" 
-        className={styles.introSection}>
+      <section id="home" className={styles.introSection}>
         <div className={styles.introContainer}>
           <div className={styles.introImage}>
             <img src={gravidaImg} alt="Gestante capa" />
@@ -30,10 +29,15 @@ const Home = () => {
         </div>
       </section>
 
-      {/* BabyBuddyHome renderizado logo abaixo da seção acima */}
-      <BabyBuddyHome className="ok" />
+      <BabyBuddyHome />
       <Features />
-      <Artigos />    </>
+      <Artigos />
+
+      {/* Seção de Cadastro */}
+      <section id="cadastro" className={styles.cadastroSection}>
+        <Cadastro />
+      </section>
+    </>
   );
 };
 

@@ -1,34 +1,23 @@
-
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = ({ onScrollTo }) => {
   const location = useLocation();
-  const navigate = useNavigate();
 
   const handleScrollOrNavigate = (section) => {
-    if (section === 'cadastro') {
-      navigate('/cadastro');
-      return;
-    }
-
-    if (location.pathname === '/') {
-      onScrollTo(section);
-    } else {
-      navigate(`/#${section}`);
-    }
+    // A função de rolar até a seção deve ser chamada, sem navegar para uma nova rota
+    onScrollTo(section);
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-       
-      
         <nav className={styles.navLinks}>
+          <button onClick={() => handleScrollOrNavigate("home")}>Inicio</button>
+          <button onClick={() => handleScrollOrNavigate("babyBuddyHome")}>BabyBuddy</button>
+          <button onClick={() => handleScrollOrNavigate("contato")}>Aplicativo </button>
           <button onClick={() => handleScrollOrNavigate("artigos")}>Artigos</button>
-          <button onClick={() => handleScrollOrNavigate("BabyBuddyHome")}>Sobre Nós</button>
-          <button onClick={() => handleScrollOrNavigate("contato")}>Contato</button>
         </nav>
 
         <div className={styles.cadastroWrapper}>
