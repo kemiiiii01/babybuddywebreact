@@ -1,14 +1,14 @@
   @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;800&display=swap');
 
   
-  .artigos {
+.artigos {
   text-align: center;
-  padding: 190px 80px;
+  padding: 300px 100px; /* Aumentei o padding vertical para 300px */
   font-family: "League Spartan", sans-serif;
-  min-height: 400px;
-  background-color: #fff;
-  
+  max-width: 1400px;
+  background-color: #ffffff;
 }
+
 
 .titulo {
   color: #ec407a;
@@ -21,7 +21,7 @@
 .containerCards {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: nowrap;
   overflow-x: auto;
   padding-bottom: 40px;
@@ -34,7 +34,7 @@
 }
 
 .cardImg {
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }

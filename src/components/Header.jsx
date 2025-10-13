@@ -6,7 +6,7 @@ const Header = ({ onScrollTo }) => {
   const location = useLocation();
 
   const handleScrollOrNavigate = (section) => {
-    // A função de rolar até a seção deve ser chamada, sem navegar para uma nova rota
+    
     onScrollTo(section);
   };
 
@@ -14,8 +14,8 @@ const Header = ({ onScrollTo }) => {
     <header className={styles.header}>
       <div className={styles.headerContent}>
         <nav className={styles.navLinks}>
-          <button onClick={() => handleScrollOrNavigate("home")}>Inicio</button>
           <button onClick={() => handleScrollOrNavigate("babyBuddyHome")}>BabyBuddy</button>
+          <button onClick={() => handleScrollOrNavigate("babyBuddyHome")}>Sobre</button>
           <button onClick={() => handleScrollOrNavigate("contato")}>Aplicativo </button>
           <button onClick={() => handleScrollOrNavigate("artigos")}>Artigos</button>
         </nav>

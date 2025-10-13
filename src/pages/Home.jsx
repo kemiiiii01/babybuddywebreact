@@ -5,7 +5,6 @@ import BabyBuddyHome from './BabyBuddyHome.jsx';
 import Features from './features.jsx'; 
 import Footer from '../components/Footer.jsx';
 import Artigos from './artigos.jsx';
-import Cadastro from './Cadastro.jsx'; // Importar o componente Cadastro
 
 const Home = () => {
   return (
@@ -32,11 +31,6 @@ const Home = () => {
       <BabyBuddyHome />
       <Features />
       <Artigos />
-
-      {/* Seção de Cadastro */}
-      <section id="cadastro" className={styles.cadastroSection}>
-        <Cadastro />
-      </section>
     </>
   );
 };
