@@ -8,8 +8,7 @@ import img3 from '../assets/imgartigo3.png';
 
 const Artigos = () => {
   return (
-
-    <section id="artigos" className={styles.introSection}>
+<section>
       <h2 className={styles.titulo}>Principais Artigos</h2>
       
       <div className={styles.containerCards}>
@@ -49,8 +48,7 @@ const Artigos = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+</section>  );
 };
 
 export default Artigos;

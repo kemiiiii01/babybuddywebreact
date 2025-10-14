@@ -2,9 +2,10 @@ import React from 'react';
 import styles from './Home.module.css';
 import gravidaImg from '../assets/gravida.png'; 
 import BabyBuddyHome from './BabyBuddyHome.jsx'; 
-import Features from './features.jsx'; 
+import Features from './Features.jsx'; 
 import Footer from '../components/Footer.jsx';
-import Artigos from './artigos.jsx';
+import Artigos from './Artigos.jsx';
+import Cadastro from './Cadastro.jsx';
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
       <BabyBuddyHome />
       <Features />
       <Artigos />
+      <Cadastro />
     </>
   );
 };

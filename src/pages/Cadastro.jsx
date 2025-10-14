@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useLocation } from 'react-router-dom';
 import styles from './Cadastro.module.css';
 
 export default function Cadastro() {
-  const [loading, setLoading] = useState(false); // Para mostrar um loader enquanto carrega
-  const [error, setError] = useState(""); // Para mostrar um erro se acontecer
-  const [success, setSuccess] = useState(""); // Para mostrar uma mensagem de sucesso
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const togglePassword = (id, element) => {
     const input = document.getElementById(id);
@@ -36,14 +49,12 @@ export default function Cadastro() {
       });
 
       console.log('Resposta da API:', response.data);
-
-      // Mensagem de sucesso
       setSuccess("Cadastro realizado com sucesso!");
     } catch (error) {
       console.error('Erro ao cadastrar:', error.response?.data || error.message);
       setError('Erro ao cadastrar usuário. Verifique os dados.');
     } finally {
-      setLoading(false); // Parar o loader após a resposta da API
+      setLoading(false);
     }
   };
 
@@ -59,10 +70,10 @@ export default function Cadastro() {
 
   return (
     <div className={styles.appWrapper}>
-      <div className={styles.cadastroContainer}>
+      {/* Esse id aqui é fundamental para o scroll funcionar */}
+      <div className={styles.cadastroContainer} id="formulario">
         <h2>BabyBuddy</h2>
-        
-        {/* Exibe a mensagem de sucesso ou erro */}
+
         {success && <div className={styles.successMessage}>{success}</div>}
         {error && <div className={styles.errorMessage}>{error}</div>}
 

@@ -1,27 +1,44 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 
-const Header = ({ onScrollTo }) => {
-  const location = useLocation();
+const Header = () => {
+  const navigate = useNavigate();
 
-  const handleScrollOrNavigate = (section) => {
-    
-    onScrollTo(section);
+  const handleNavigation = (section) => {
+    switch (section) {
+      case 'home':
+        navigate('/#home');
+        break;
+      case 'babyBuddyHome':
+        navigate('/babybuddyhome#sobre');
+        break;
+      case 'contato':
+        navigate('/sobre#contato');
+        break;
+      case 'artigos':
+        navigate('/artigos#lista');
+        break;
+      case 'cadastro':
+        navigate('/cadastro#formulario');
+        break;
+      default:
+        navigate('/');
+    }
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
         <nav className={styles.navLinks}>
-          <button onClick={() => handleScrollOrNavigate("babyBuddyHome")}>BabyBuddy</button>
-          <button onClick={() => handleScrollOrNavigate("babyBuddyHome")}>Sobre</button>
-          <button onClick={() => handleScrollOrNavigate("contato")}>Aplicativo </button>
-          <button onClick={() => handleScrollOrNavigate("artigos")}>Artigos</button>
+          <button onClick={() => handleNavigation('home')}>Inicio</button>
+          <button onClick={() => handleNavigation('babyBuddyHome')}>BabyBuddy</button>
+          <button onClick={() => handleNavigation('contato')}>Aplicativo</button>
+          <button onClick={() => handleNavigation('artigos')}>Artigos</button>
         </nav>
 
         <div className={styles.cadastroWrapper}>
-          <button className={styles.cadastroLink} onClick={() => handleScrollOrNavigate("cadastro")}>
+          <button className={styles.cadastroLink} onClick={() => handleNavigation('cadastro')}>
             Cadastre-se
           </button>
         </div>

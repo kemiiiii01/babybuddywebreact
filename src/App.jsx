@@ -12,30 +12,16 @@ import Seguranca from './pages/Seguranca.jsx';
 import Sobre from './pages/Sobre.jsx';
 import TentandoEngravidar from './pages/TentandoEngravidar.jsx';
 import TermosDeUso from './pages/TermosDeUso.jsx';
-import Features from './pages/features.jsx';
-import Artigos from './pages/artigos.jsx';
+import Features from './pages/Features.jsx';
+import Artigos from './pages/Artigos.jsx';
 
 const App = () => {
-
-  // Função para rolar suavemente para a seção
-  const onScrollTo = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: 'smooth',
-      });
-    }
-  };
-
   return (
     <Router>
-      {/* Header será exibido em todas as páginas */}
-      <Header onScrollTo={onScrollTo} />
+      <Header />
 
-      {/* Rotas para as páginas */}
       <Routes>
-        <Route path="/" element={<Home onScrollTo={onScrollTo} />} />
+        <Route path="/" element={<Home />} />
         <Route path="/babybuddyhome" element={<BabyBuddyHome />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/cuidadosbebe" element={<CuidadosBebe />} />
@@ -49,7 +35,6 @@ const App = () => {
         <Route path="/artigos" element={<Artigos />} />
       </Routes>
 
-      {/* Footer será exibido em todas as páginas */}
       <Footer />
     </Router>
   );
