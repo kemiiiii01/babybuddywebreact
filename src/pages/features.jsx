@@ -13,7 +13,7 @@ const Features = () => {
           <img src={facilidadeImg} alt="Facilidade" className={styles.featureImg} />
           <h3>Facilidade</h3>
           <p>
-            O BabyBuddy oferece facilidade ao reunir todas as informações e atualizações da gravidez em um só lugar, simplificando o acompanhamento e tornando a jornada mais tranquila.
+           O BabyBuddy traz praticidade ao reunir todas as informações e atualizações da gravidez em um só lugar, tornando o acompanhamento simples e a jornada mais tranquila.
           </p>
         </div>
 
@@ -21,7 +21,7 @@ const Features = () => {
           <img src={compartilhamentoImg} alt="Compartilhamento com o parceiro" className={styles.featureImg} />
           <h3>Compartilhamento com o parceiro</h3>
           <p>
-            Compartilhe o progresso da gravidez com seu parceiro através do app, fortalecendo o vínculo e garantindo que ambos estejam envolvidos e informados a cada etapa.
+            Compartilhe o progresso da gestação com seu parceiro através do app, fortalecendo o vínculo e garantindo que ambos estejam informados e envolvidos em cada etapa.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const Features = () => {
           <img src={privacidadeImg} alt="Privacidade" className={styles.featureImg} />
           <h3>Privacidade</h3>
           <p>
-            Com o BabyBuddy, você está no comando. Você nos confia suas informações pessoais e nós garantimos sua segurança. Seus dados de saúde nunca serão compartilhados fora do App.
+            Com o BabyBuddy, você tem total controle. Suas informações pessoais ficam seguras, e seus dados de saúde nunca serão compartilhados fora do aplicativo.
           </p>
         </div>
       </div>

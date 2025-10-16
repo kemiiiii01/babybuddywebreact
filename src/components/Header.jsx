@@ -11,7 +11,7 @@ const Header = () => {
         navigate('/#home');
         break;
       case 'babyBuddyHome':
-        navigate('/babybuddyhome#sobre');
+        navigate('/babybuddyhome#');
         break;
       case 'contato':
         navigate('/sobre#contato');
@@ -33,7 +33,7 @@ const Header = () => {
         <nav className={styles.navLinks}>
           <button onClick={() => handleNavigation('home')}>Inicio</button>
           <button onClick={() => handleNavigation('babyBuddyHome')}>BabyBuddy</button>
-          <button onClick={() => handleNavigation('contato')}>Aplicativo</button>
+          <button onClick={() => handleNavigation('contato')}>Sobre</button>
           <button onClick={() => handleNavigation('artigos')}>Artigos</button>
         </nav>
 
