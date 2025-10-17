@@ -13,8 +13,8 @@ const Header = () => {
       case 'babyBuddyHome':
         navigate('/babybuddyhome#');
         break;
-      case 'contato':
-        navigate('/sobre#contato');
+     case 'contato':
+        navigate('/features#lista');
         break;
       case 'artigos':
         navigate('/artigos#lista');

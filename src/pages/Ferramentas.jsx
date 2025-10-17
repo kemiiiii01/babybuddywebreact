@@ -1,8 +1,5 @@
 import React from 'react';
-import styles from './CuidadosBebe.module.css'; // Importa CSS Modules
-import gravida from '../assets/gravida.png';
-import facilidades from '../assets/facilidade.png';
-import compartilhamento from '../assets/compartilhamento.png';
+import styles from './CuidadosBebe.module.css'; 
 
 const CuidadosBebe = () => (
   <div className={styles.cuidados}>
@@ -22,6 +19,7 @@ const CuidadosBebe = () => (
       </div>
     </div>
   </div>
+  
 );
 
 export default CuidadosBebe;

@@ -5,7 +5,7 @@ import styles from './BabyBuddyHome.module.css';
 const BabyBuddyHome = () => {
   return (
     <section
-      id="babyBuddyHome" // Esse é o ID para a rolagem suave
+      id="babyBuddyHome" 
       className={styles['babybuddy-section']}
       aria-label="Funcionalidades do aplicativo BabyBuddy"
     >
