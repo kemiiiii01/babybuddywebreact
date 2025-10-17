@@ -19,7 +19,6 @@ const CuidadosBebe = () => (
       </div>
     </div>
   </div>
-  
 );
 
 export default CuidadosBebe;

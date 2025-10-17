@@ -1,3 +1,12 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffb3b3; 
+  color: #222;
+}
+
+
 .main-section {
   max-width: 1200px;
   margin: auto;
@@ -116,7 +125,7 @@
   text-decoration: underline;
 }
 
-/* Seções do artigo */
+
 .article-section {
   display: flex;
   flex-direction: column;
@@ -166,4 +175,3 @@
     width: 100%;
   }
 }
-
